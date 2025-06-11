@@ -1,0 +1,38 @@
+{
+  "name": "qb-compat",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm run format && pnpm run check && node build.mjs",
+    "forcebuild": "node builder/build.mjs",
+    "clean": "rm -rfv ./lib",
+    "format": "pnpm biome format --write",
+    "check": "pnpm biome check --write && tsc --build",
+    "lint": "pnpm biome lint --write"
+  },
+  "keywords": [
+    "fivem",
+    "javascript",
+    "typescript",
+    "citizenfx"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumina-io/qb-compat.git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@citizenfx/client": "latest",
+    "@citizenfx/server": "latest",
+    "@nativewrappers/common": "^0.0.103",
+    "@nativewrappers/fivem": "^0.0.103",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.5",
+    "fs-extra": "^11.3.0",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "outDir": "./lib",
+    "emitDeclarationOnly": true,
+    "target": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "types": ["@types/node"],
+    "paths": {
+      "client/*": ["./client/*"],
+      "server/*": ["./server/*"],
+      "shared/*": ["./shared/*"],
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "**/examples/"],
+  "references": [
+    { "path": "./src/client" },
+    { "path": "./src/server" },
+    { "path": "./src/shared" }
+  ]
+}
