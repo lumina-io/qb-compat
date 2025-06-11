@@ -26,6 +26,10 @@
   "publishConfig": {
     "directory": "lib"
   },
+  "files": [
+    "./**/*.js",
+    "./**/*.d.ts"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@citizenfx/client": "latest",
@@ -39,4 +43,3 @@
     "typescript": "^5.8.3"
   }
 }
-
