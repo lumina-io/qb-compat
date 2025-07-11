@@ -4,5 +4,5 @@
     "composite": true,
     "types": ["@citizenfx/client"]
   },
-  "include": ["./"]
+  "include": ["./", "../shared/"]
 }

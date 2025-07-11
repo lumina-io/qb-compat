@@ -1,3 +1,5 @@
+import type { QBPlayerItem } from "./item";
+
 export type QBMoneyType = "cash" | "bank" | "crypto";
 
 export type QBMoney = {

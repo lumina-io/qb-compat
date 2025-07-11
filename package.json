@@ -1,10 +1,14 @@
 {
   "name": "qb-compat",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "scripts": {
     "build": "pnpm run format && pnpm run check && node build.mjs",
+    "publish": "pnpm run publish:client && pnpm run publish:server && pnpm run publish:shared",
+    "publish:client": "pnpm publish --no-git-checks --access public './lib/client'",
+    "publish:server": "pnpm publish --no-git-checks --access public './lib/server'",
+    "publish:shared": "pnpm publish --no-git-checks --access public './lib/shared'",
     "forcebuild": "node builder/build.mjs",
     "clean": "rm -rfv ./lib",
     "format": "pnpm biome format --write",
