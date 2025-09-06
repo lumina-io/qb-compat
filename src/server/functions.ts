@@ -1,5 +1,5 @@
+import type { QBPlayer } from "@/shared/player";
 import type { Vector3 } from "@nativewrappers/common";
-import type { QBPlayer } from "../shared/player";
 
 export declare interface QBServerFunctions {
   GetEntityCoords: (entity: number) => Vector3;

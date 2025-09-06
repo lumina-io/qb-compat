@@ -1,4 +1,4 @@
-import type { QBCoreServer } from "./qbcore";
+import type { QBCoreServer } from "@/server/qbcore";
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export const QBCore: QBCoreServer = exports["qb-core"].GetCoreObject();

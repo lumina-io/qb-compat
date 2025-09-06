@@ -1,7 +1,7 @@
-import type { QBConfig } from "../shared/config";
-import type { QBPlayerData } from "../shared/player";
-import type { QBCoreShared } from "../shared/qbcore";
-import type { QBClientFunctions } from "./functions";
+import type { QBClientFunctions } from "@/client/functions";
+import type { QBConfig } from "@/shared/config";
+import type { QBPlayerData } from "@/shared/player";
+import type { QBCoreShared } from "@/shared/qbcore";
 
 export declare interface QBCoreClient {
   Shared: QBCoreShared;

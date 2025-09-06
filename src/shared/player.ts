@@ -1,4 +1,4 @@
-import type { QBPlayerItem } from "./item";
+import type { QBPlayerItem } from "@/shared/item";
 
 export type QBMoneyType = "cash" | "bank" | "crypto";
 

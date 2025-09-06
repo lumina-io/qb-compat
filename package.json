@@ -12,7 +12,7 @@
     "forcebuild": "node builder/build.mjs",
     "clean": "rm -rfv ./lib",
     "format": "pnpm biome format --write",
-    "check": "pnpm biome check --write && tsc --build",
+    "check": "pnpm biome check --write  && tsc -b && tsc-alias",
     "lint": "pnpm biome lint --write"
   },
   "keywords": [

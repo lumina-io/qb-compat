@@ -1,6 +1,6 @@
+import type { QBVehicleProperties } from "@/client/vehicle";
+import type { QBPlayerData } from "@/shared/player";
 import type { Vector3 } from "@nativewrappers/common";
-import type { QBPlayerData } from "../shared/player";
-import type { QBVehicleProperties } from "./vehicle";
 
 export declare interface QBClientFunctions {
   GetPlayerData: (cb?: () => QBPlayerData) => QBPlayerData;

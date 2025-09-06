@@ -1,12 +1,13 @@
 {
+  "files": [],
   "compilerOptions": {
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "baseUrl": ".",
+    "rootDir": ".",
     "outDir": "./lib",
     "emitDeclarationOnly": true,
     "target": "esnext",
     "lib": ["esnext"],
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "declaration": true,
@@ -16,9 +17,7 @@
     "verbatimModuleSyntax": true,
     "types": ["@types/node"],
     "paths": {
-      "client/*": ["./client/*"],
-      "server/*": ["./server/*"],
-      "shared/*": ["./shared/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src/**/*"],

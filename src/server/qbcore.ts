@@ -1,9 +1,9 @@
-import type { QBConfig } from "../shared/config";
-import type { QBPlayer, QBPlayerFunctions } from "../shared/player";
-import type { QBCoreShared } from "../shared/qbcore";
-import type { QBCommands } from "./commands";
-import type { QBServerFunctions } from "./functions";
-import type { QBUseableItem } from "./items";
+import type { QBCommands } from "@/server/commands";
+import type { QBServerFunctions } from "@/server/functions";
+import type { QBUseableItem } from "@/server/items";
+import type { QBConfig } from "@/shared/config";
+import type { QBPlayer, QBPlayerFunctions } from "@/shared/player";
+import type { QBCoreShared } from "@/shared/qbcore";
 
 export declare interface QBCoreServer {
   Shared: QBCoreShared;
