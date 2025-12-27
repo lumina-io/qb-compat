@@ -1,6 +1,7 @@
 import type { QBPlayerItem } from "@/shared/item";
 
 export type QBMoneyType = "cash" | "bank" | "crypto";
+export type QBMoneyActionType = "add" | "remove" | "set";
 
 export type QBMoney = {
   cash: number;
